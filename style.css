@@ -1,0 +1,91 @@
+/* make body margin 0 and pading 0 , thus no built in margin and padding */
+body {
+	margin: auto 0;
+	padding: 0;
+}
+
+/*top navigation bar list style none and make margin 10% of the view (10vh) */
+li {
+	list-style-type: none;
+	margin: 0 10vh;
+}
+/*top navigation bar anchor text decoration none and color and font size */
+a{
+	text-decoration: none;
+	color: rgba(255,255,255,0.9) ;
+	font-size: 18px;
+}
+
+/*top navigation bar anchor text hover color */
+a:hover{
+  color: rgba(255,255,255,1);
+}
+
+/* top navigation bar widhth 100% (100nav) , no margin and backgraound color   */
+.header {
+	margin: 0;
+	width: 100nav;
+	/*background-color: #ff5500;*/
+	background-color: rgba(85, 171, 85, 0.8);
+}
+
+.sticky {
+	position: fixed;
+	width: 100%;
+}
+
+/* top navigation bar list flex properties and padding  */
+.main-nav{
+	margin: 0;
+	display: flex;
+	padding: 10px;
+}
+
+/* top navigation font size become 0.2em when resolution became less then 600px  */
+@media only screen and (max-width: 600px) {
+  /*shows elements in a column*/
+  .main-nav {
+    font-size: 0.2em;
+    padding: 0;
+  }
+}
+
+/* div of cover image , flex properties and height 55% of the view   */
+  .cover {
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	align-items: center;
+  	height: 55vh;
+  
+  }
+/* cover image width 100% and height 55% of the view */
+  .cover-img {
+  	height: 55vh;
+  	width: 100%;
+  }
+
+/* div of project grid background color , grid display and column auto fill , min 250px and max 1fr */ 
+.project_grid{
+	background-color: lightblue;
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+/* all img whose parent is box get 100% width */
+.box > img {
+	width: 100%;	
+}
+
+/* project grid all images  background color , margin and padding */
+.box {
+	background-color: grey;
+	margin: 3px;
+	padding: 70px;
+}
+
+footer {
+	background-color: darkblue;
+	text-align: center;
+}
